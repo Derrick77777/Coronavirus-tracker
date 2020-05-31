@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Coronvirus tracker</title>
+    <!-- <style>
+      body, html { margin:0; padding:0; height:100%;}
+      body { font-family:sans-serif; }
+      body * { font-weight:200;}
+      #map { height:70%;position:relative }
+      .leaflet-container {
+        background: rgba(0,0,0,.8) !important;
+      }
+      h1 { position:relative; background:black; color:white; padding:10px; font-weight:200; z-index:10000;}
+      #all-examples-info { position:absolute; background:white; font-size:16px; padding:20px; top:100px; width:350px; line-height:150%; border:1px solid rgba(0,0,0,.2);}
+      button {
+      margin-top: 20px;
+      margin-left: 20px;
+      line-height: 60px;
+      font-weight: bold;
+      padding: 0 40px;
+      background: salmon;
+      border:aqua;
+      }
+button:hover {
+  background: lightsalmon;
+}
+    </style> -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="/build/heatmap.js"></script> -->
+    <script src="/plugins/leaflet-heatmap/leaflet-heatmap.js"></script>
+    <script type="module" src="index.js"></script>
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+   <h1>Coronavirus Heatmap</h1>
+   
+   <div id="map"></div>
+   <p></p>
+   <div id="sliderTlt">Heatmap radius:   </div>
+   <div class="rangeslider"> 
+    
+    <input type="range" min="0.1" max="9.1" value="1"
+          class="myslider" id="sliderRange"> 
+  </div>
+
+  </body>
+</html>

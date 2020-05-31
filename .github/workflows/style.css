@@ -1,0 +1,51 @@
+body, html { margin:0; padding:0; height:100%;}
+      body { font-family:sans-serif; }
+      body * { font-weight:200;}
+      #map { height:70%;position:relative }
+      .leaflet-container {
+        background: rgba(0,0,0,.8) !important;
+      }
+      h1 { position:relative; background:black; color:white; padding:10px; font-weight:200; z-index:10000;}
+     
+      button {
+      margin-top: 20px;
+      margin-left: 20px;
+      line-height: 60px;
+      font-weight: bold;
+      font-size: large;
+      padding: 0 40px;
+      /* background: rgba(85, 85, 84, 0.281); */
+      border:rgb(0, 0, 8);
+      float: none;
+      }
+button:hover {
+  background: rgb(255, 149, 122);
+}
+
+#sliderTlt {
+  font-weight: bold;
+  float: left;
+}
+.rangeslider{
+    float: left;
+
+   
+    }
+.myslider {
+  float: left;
+    background: rgb(208, 207, 252)  ;
+
+    opacity: 2;
+
+    }
+.myslider:hover {
+    opacity: 1;
+    }
+.myslider::-webkit-slider-thumb {
+    
+    cursor: pointer;
+    background: rgb(175, 0, 0)  ;
+    width: 5%;
+    height: 20px;
+    
+    }
